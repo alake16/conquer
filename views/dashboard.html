@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="../assets/styles/header.css">
+    <link rel="stylesheet" href="../assets/styles/dashboard.css">
+    <link rel="stylesheet" href="../assets/styles/text.css">
+    <link rel="stylesheet" href="../assets/styles/flexbox.css">
+    <link rel="stylesheet" href="../assets/styles/card-dashboard.css">
+    <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-database.js"></script>
+</head>
+<body>
+
+<header>
+    <ul class="navbar">
+        <li class="nav-elt"><a href="../index.html">Home</a></li>
+        <li class="nav-elt"><a class="active-tab" href="#">Dashboard</a></li>
+        <li class="nav-elt"><a href="routines.html">Routines</a></li>
+        <li class="nav-elt"><a href="blog.html">Blog</a></li>
+        <li class="user-elt"><a href="account.html"><img src="../assets/images/user-icon2.png" class="user-icon" alt="User Icon"></a></li>
+    </ul>
+    <h1 class="center redText" id="welcome-message"></h1>
+</header>
+
+<main class="box">
+    <section class="column">
+        <h1 class="center redText">Performance</h1>
+        <button id="logWorkoutBtn">Log a Workout</button>
+        <h4>Total Workouts Tracked:</h4>
+        <p id="totalWorkoutsTracked"></p>
+        <h4>Days Since Last Workout</h4>
+        <p id="daysSinceLastWorkout"></p>
+        <button id="viewLoggedWorkoutsBtn">View Logged Workouts</button>
+    </section>
+
+    <section class="column">
+        <h1 class="center redText">Body Measurements</h1>
+        <label for="timeframe">Filter By: </label>
+        <select name="timeframe" id="timeframe">
+            <option id="monthTimeframe" value="Month">Month</option>
+            <option id="yearTimeframe" value="Year">Year</option>
+            <option id="weekTimeframe" value="Week">Week</option>
+        </select>
+        <canvas id="myChart" width="300" height="300"></canvas>
+        <p id="currentWeight"></p>
+        <p id="targetWeight"></p>
+        <input type="number" id="txtWeight" placeholder="Weight">
+        <input type="date" id="txtDate" placeholder="Date">
+        <br>
+        <button id="btnCurrentWeight">Log Weight</button>
+        <button id="btnTargetWeight">Update Target Weight</button>
+        <p id="height"></p>
+        <input type="number" id="txtHeightFeet" placeholder="Feet">
+        <input type="number" id="txtHeightInches" placeholder="Inches">
+        <button id="btnHeight">Update Height</button>
+        <p id="txtBodyMassIndex"></p>
+    </section>
+
+    <section class="column center">
+        <h1 class="center redText">Goals</h1>
+        <input type="text" id="txtGoalTitle" placeholder="Goal Title">
+        <input type="date" id="txtGoalDate" placeholder="Goal Date">
+        <br/>
+        <br/>
+        <textarea name="body" id="txtGoalDescription" rows="6" cols="50" placeholder="Goal Description"></textarea>
+        <br/>
+        <button id="btnCreateNewGoal">Create New Goal</button>
+        <div id="goals"></div>
+    </section>
+</main>
+
+<footer>
+    <p>Developed by Andrew Lake</p>
+    <div class="user-output"></div>
+    <p>Contact Information: <a class="email-link" href="mailto:alake1@luc.edu">alake1@luc.edu</a></p>
+</footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+<script src="../assets/scripts/dashboard.js"></script>
+</html>

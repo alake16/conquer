@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Create New Account</title>
+    <link rel="stylesheet" href="../assets/styles/header.css">
+    <link rel="stylesheet" href="../assets/styles/text.css">
+    <link rel="stylesheet" href="../assets/styles/flexbox.css">
+    <link rel="stylesheet" href="../assets/styles/create-new-account.css">
+    <script src="https://www.gstatic.com/firebasejs/5.8.6/firebase.js"></script>
+</head>
+
+<body>
+
+<header>
+    <ul class="navbar">
+        <li class="nav-elt"><a href="../index.html">Home</a></li>
+        <li class="nav-elt"><a href="dashboard.html">Dashboard</a></li>
+        <li class="nav-elt"><a href="routines.html">Routines</a></li>
+        <li class="nav-elt"><a href="blog.html">Blog</a></li>
+        <li class="user-elt"><a class="active-tab" href="account.html"><img src="../assets/images/user-icon2.png" class="user-icon" alt="User Icon"></a></li>
+    </ul>
+    <h1 class="center">Create a New Account</h1>
+</header>
+
+<main>
+    <section class="box">
+        <article class="column center">
+            <input type="text" id="txtFirstName" placeholder="First Name">
+            <input type="text" id="txtLastName" placeholder="Last Name">
+            <input type="text" id="txtUsername" placeholder="Username">
+            <input type="email" id="txtEmail" placeholder="Email">
+            <input type="password" id="txtPassword" placeholder="Password">
+            <!--<input type="password" id="txtConfirmPassword" placeholder="Confirm Password">-->
+            <button id="btnSignUp">Sign Up</button>
+        </article>
+    </section>
+</main>
+
+<footer>
+    <p>Developed by Andrew Lake</p>
+    <p>Contact Information: <a class="email-link" href="mailto:alake1@luc.edu">alake1@luc.edu</a></p>
+</footer>
+
+</body>
+<script src="../assets/scripts/create-new-account.js"></script>
+</html>

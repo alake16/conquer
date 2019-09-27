@@ -1,0 +1,48 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #4E4E50;
+}
+
+.nav-elt {
+    float: left;
+}
+
+.user-elt {
+    float: right;
+}
+
+.user-icon {
+    display: block;
+    width: 18px;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    color: white;
+}
+
+.user-elt a:hover {
+    background-color: #940740;
+}
+
+.active-tab {
+    background-color: #940740;;
+}

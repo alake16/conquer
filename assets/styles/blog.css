@@ -1,0 +1,20 @@
+.container {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+article {
+    background-color: #D3D3D3;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.deletePostBtn {
+    display: none;
+    text-align: center;
+}
+
+article:hover .deletePostBtn, .deletePostBtn:hover {
+    display: inline-block;
+}

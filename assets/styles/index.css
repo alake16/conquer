@@ -1,0 +1,35 @@
+img {
+    padding: 0;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+}
+
+#welcome-message {
+    text-align: center;
+}
+
+.logo-header {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100px;
+}
+
+.features {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.features-list {
+    display: block;
+    list-style-type: disc;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 40px;
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Routines</title>
+    <link rel="stylesheet" href="../assets/styles/header.css">
+    <link rel="stylesheet" href="../assets/styles/text.css">
+    <link rel="stylesheet" href="../assets/styles/flexbox.css">
+    <link rel="stylesheet" href="../assets/styles/card.css">
+    <link rel="stylesheet" href="../assets/styles/modal.css">
+    <link rel="stylesheet" href="../assets/styles/exercise-table.css">
+    <link rel="stylesheet" href="../assets/styles/edit-routine.css">
+    <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-database.js"></script>
+</head>
+
+<body>
+
+<header>
+    <ul class="navbar">
+        <li class="nav-elt"><a href="../index.html">Home</a></li>
+        <li class="nav-elt"><a href="dashboard.html">Dashboard</a></li>
+        <li class="nav-elt"><a class="active-tab" href="routines.html">Routines</a></li>
+        <li class="nav-elt"><a href="blog.html">Blog</a></li>
+        <li class="user-elt"><a href="account.html"><img src="../assets/images/user-icon2.png" class="user-icon" alt="User Icon"></a></li>
+    </ul>
+    <h1 id="welcomeMessage" class="center redText"></h1>
+</header>
+
+<main>
+    <section class="card">
+        <div class="container">
+            <table id="exercisesInRoutine"></table>
+            <button id="addExerciseBtn">Add Exercise</button>
+        </div>
+    </section>
+
+    <div id="addExerciseModal" class="modal">
+        <div class="modal-content">
+            <section class="modal-header">
+                <span class="close">&times;</span>
+                <h2 class="modalHeader">Add an Exercise</h2>
+            </section>
+            <section class="modal-body">
+                <p>Muscle Group</p>
+                <select name="muscleGroup" id="muscleGroup"></select>
+                <table id="exerciseOption"></table>
+            </section>
+            <section class="modal-footer">
+                <h3>Modal Footer</h3>
+            </section>
+        </div>
+    </div>
+
+    <div id="addSetsToExerciseModal" class="modal">
+        <section class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2>Add Sets to This Exercise</h2>
+            </div>
+            <section class="modal-body">
+                <table>
+                    <tr id="selectedExerciseRow" class="selectedExerciseRow">
+
+                    </tr>
+                </table>
+            </section>
+            <section class="modal-footer">
+                <h3>Modal Footer</h3>
+            </section>
+        </section>
+    </div>
+
+</main>
+
+<footer>
+    <p>Developed by Andrew Lake</p>
+    <p>Contact Information: <a class="email-link" href="mailto:alake1@luc.edu">alake1@luc.edu</a></p>
+</footer>
+
+</body>
+<script src="../assets/scripts/edit-routine.js"></script>
+</html>

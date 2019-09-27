@@ -1,0 +1,16 @@
+.box {
+    display: flex;
+    justify-content: center;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 40px;
+    align-items: stretch;
+}
+
+.column {
+    outline: solid 5px #4E4E50;
+    padding: 10px;
+    margin: 10px;
+    /*flex-basis: 300px;*/
+    /*flex-grow: 1;*/
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Blog</title>
+    <link rel="stylesheet" href="../assets/styles/header.css">
+    <link rel="stylesheet" href="../assets/styles/text.css">
+    <link rel="stylesheet" href="../assets/styles/blog.css">
+    <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-database.js"></script>
+</head>
+
+<body>
+
+<header>
+    <ul class="navbar">
+        <li class="nav-elt"><a href="../index.html">Home</a></li>
+        <li class="nav-elt"><a href="dashboard.html">Dashboard</a></li>
+        <li class="nav-elt"><a href="routines.html">Routines</a></li>
+        <li class="nav-elt"><a class="active-tab" href="#">Blog</a></li>
+        <li class="user-elt"><a href="account.html"><img src="../assets/images/user-icon2.png" class="user-icon" alt="User Icon"></a></li>
+    </ul>
+    <h1 class="center redText" id="welcomeMessage"></h1>
+</header>
+
+<main>
+    <section class="container" id="blogContainer">
+        <section class="center">
+            <label style="color: white;">Title</label>
+            <br>
+            <input type="text" id="txtTitle" placeholder="Title">
+            <br/>
+            <label style="color: white;">Body</label>
+            <br/>
+            <textarea name="body" id="txtBody" rows="6" cols="80" placeholder="Body Text"></textarea>
+            <br/>
+        </section>
+        <button id="btnCreateNewPost">Create New Post</button>
+        <div id="blogPosts"></div>
+    </section>
+</main>
+
+<footer>
+    <p>Developed by Andrew Lake</p>
+    <p>Contact Information: <a class="email-link" href="mailto:alake1@luc.edu">alake1@luc.edu</a></p>
+</footer>
+
+</body>
+<script src="../assets/scripts/blog.js"></script>
+</html>

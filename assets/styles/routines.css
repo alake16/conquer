@@ -1,0 +1,50 @@
+.routineRow {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.routineInfoCell {
+    width: 40%;
+    margin: 10px;
+    text-align: left;
+}
+
+.routineMusclesTargetedCell {
+    width: 40%;
+    margin: 10px;
+    text-align: center;
+}
+
+.editRoutineCell {
+    width: 20%;
+    margin: 10px;
+    text-align: center;
+}
+
+input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Style the submit button */
+#btnCreateNewRoutine {
+    text-align: center;
+    width: 50%;
+    background-color: #4E4E50;
+    color: white;
+    padding: 14px 20px;
+    margin: auto;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Add a background color to the submit button on mouse-over */
+#btnCreateNewRoutine:hover {
+    background-color: black;
+}

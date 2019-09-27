@@ -1,0 +1,26 @@
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+footer {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.email-link {
+    color: black;
+}
+
+.center {
+    text-align: center;
+}
+
+button {
+    display: block;
+    margin: 0 auto;
+}
+
+.redText {
+    color: #940740;
+}
